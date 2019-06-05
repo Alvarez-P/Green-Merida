@@ -1,0 +1,187 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+body {
+   color:#2B8A3B;
+   margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    
+}
+p{
+  color:forestgreen;
+  font-size:15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table{   margin-left: auto;
+  margin-right: auto;}
+
+header {
+   margin-left: auto;
+  margin-right: auto;
+	 width:100%;
+         margin:15px;
+}
+HR { 
+  border: 5px solid #2B8A3B;
+  border-radius: 150px ; 
+  height: 0px; 
+  text-align: center; 
+}
+
+
+nav {
+  margin-left: auto;
+ margin-right: auto;
+
+   margin:20px auto;
+   width:90%;
+   max-width:1000px;
+
+}
+
+nav ul {
+
+ list-style:none;
+
+}
+
+nav > ul {
+ display:table;
+ overflow:hidden;
+ width:100%;
+ background:#81F781;
+ position:relative;
+}
+
+nav > ul li {
+ display:table-cell;
+
+}
+
+/*Sub-Menu*/
+
+nav > ul > li:hover > ul {
+ display:block;
+ height:100%;
+
+}
+
+nav > ul > li > ul {
+ display:block;
+ position:absolute;
+ background:#81F781;
+ left:0;
+ right:0;
+ overflow:hidden;
+ height:0%;
+ -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+   -ms-transition: all .3s ease;
+   -o-transition: all .3s ease;
+   transition: all .3s ease;
+
+
+}
+
+
+nav > ul li a {
+ color:#fff;
+ display:block;
+ line-height:20px;
+ padding:20px;
+ position:relative;
+ text-align:center;
+ text-decoration:none;
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+   -ms-transition: all .3s ease;
+   -o-transition: all .3s ease;
+   transition: all .3s ease;	
+
+}
+
+nav > ul > li > ul > li a:hover {
+ background:#81F781;
+
+}
+
+nav > ul > li > a span {
+   background:#0A2A0A;
+   display:block;
+   height:100%;
+   width:100%;
+   left:0;
+   position:absolute;
+   top:-55px;
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+   -ms-transition: all .3s ease;
+   -o-transition: all .3s ease;
+   transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+ display:block;
+ line-height:60px;
+
+}
+
+nav > ul > li > a:hover > span {
+ top:0;
+}
+
+/*Colores*/
+nav ul li a .primero {
+ background:#00FF40;
+}
+
+nav ul li a .segundo {
+ background:#01DF3A;
+}
+
+nav ul li a .tercero {
+ background:#04B431;
+}
+
+nav ul li a .cuarto {
+ background:#088A29;
+}
+
+nav ul li a .quinto {
+ background:#0B6121;
+}
+
+
+
+
+
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+}
+.div-img.hidden {
+  overflow: hidden;
+}
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  height: 400px;
+  margin-top: 0px;
+  -webkit-transition: margin 1s ease;
+  -moz-transition: margin 1s ease;
+  -o-transition: margin 1s ease;
+  -ms-transition: margin 1s ease;
+  transition: margin 1s ease;
+}
+.div-img:hover .img {
+  margin-top: -200px;
+}
+

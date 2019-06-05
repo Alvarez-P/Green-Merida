@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Centros de acopio</title>
+  <link rel="shortcut icon" href="/hola.ico">
+  <style>
+    #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  </style>
+</head>
+<body>
+  
+  <div id="map"></div>
+  <script>
+    function initMap(){
+      // Map options
+      var options = {
+        zoom:12,
+        center: {lat: 20.967146, lng: -89.622789}
+
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('map'), options);
+
+      // Listen for click on map
+      
+
+      
+      // Add marker
+      var marker = new google.maps.Marker({
+        position:{lat: 20.967146, lng: -89.622789},
+        map:map,
+        icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:'<h1>Hermosa Mérida!</h1>'
+      });
+
+      marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+      });
+      
+
+      // Array of markers
+      var markers = [
+        {
+          coords: {lat:  21.012440, lng: -89.657730},
+          content:'<h1>Acopio de pilas</h1><h2>Calle 44ᴬ 375, Pedregales de Lindavista, 97219 Mérida, Yuc.</h2>'
+        },
+        {
+          coords: {lat:  20.992056, lng: -89.667915},
+          content:'<h1>Centro de acopio</h1><h2> Centro de reciclaje de latas y botellas</h2><h3>x 140 y 132, Calle 59A 312C, Sin Nombre de Col 9, Mérida, Yuc.</h3>'
+        },
+        {
+          coords:{lat: 20.957962, lng: -89.603886},
+           content:'<h1>CHATARRERIA EL CHICOTE</h1><h2> Calle 67 380, Centro, 97000 Mérida, Yuc.</h2>'
+
+        },
+        {
+          coords:{lat: 20.971664, lng: -89.568172},
+           content:'<h1>CENTRO DE ACOPIO</h1><h2> Calle 16, Melchor Ocampo, 97165 Mérida, Yuc.</h2>'
+
+        },
+          {
+          coords: {lat:  20.969958, lng: -89.620011},
+           content:'<h1>"Ecomayab"</h1><h2> Servicio de recogida de basura.</h2><h3>Carretera Sauzel 101, Centro, 97100 Mérida, Yucatán<br> 01 999 945 5071</h3>'
+
+        },
+          {
+          coords:{lat:  20.929107, lng: -89.620361},
+           content:'<h1>Sociedad Cooperativa de Recursos de Basura</h1><h2> Calle 50 822, 5 Colonias, 97280 Mérida, Yuc.</h2>'
+
+        },
+          
+          {
+          coords:{lat:  20.966893, lng: -89.663483},
+           content:'<h1>COMPRA DE METALES "ARA"</h1><h2> Av Merida 2000 39, Xoclán San Manuel, 97246 Mérida, Yuc.</h2>'
+
+        },
+        {
+          coords:{lat: 21.016798, lng: -89.607553},
+           content:'<h1>SANA Basura</h1><h2>Av. Libano 21, Emiliano Zapata Nte, 97219 Mérida, Yuc.</h2>'
+
+        },
+ {
+          coords:{lat: 20.989216, lng:-89.573586},
+           content:'<h1>Servicios Ecoambientales del Sureste S.A. de C.V.</h1><h2>Polígono 108, 97143 Mérida, Yucatán<br>01 999 212 1273.</h2>'
+
+        },
+
+
+      ];
+
+      // Loop through markers
+      for(var i = 0;i < markers.length;i++){
+        // Add marker
+        addMarker(markers[i]);
+      }
+
+      // Add Marker Function
+      function addMarker(props){
+        var marker = new google.maps.Marker({
+          position:props.coords,
+          map:map,
+          //icon:props.iconImage
+        });
+
+        // Check for customicon
+        if(props.iconImage){
+          // Set icon image
+          marker.setIcon(props.iconImage);
+        }
+
+        // Check content
+        if(props.content){
+          var infoWindow = new google.maps.InfoWindow({
+            content:props.content
+          });
+
+          marker.addListener('click', function(){
+            infoWindow.open(map, marker);
+          });
+        }
+      }
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdx0kFovPqaECLMH_BJLHmIs7KYwnQGWU&callback=initMap">
+    </script>
+</body>
+</html>

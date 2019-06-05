@@ -1,0 +1,148 @@
+﻿<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GREEN MERIDA</title>
+<link rel="shortcut icon" href="img/logo.ico">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="MENU\estilos.css">
+<link rel="stylesheet" href="MENU\fonts.css">
+<script src="https://use.fontawesome.com/1c79ef2b27.js"></script>
+
+<BR><BR>
+</head>
+<body BGCOLOR="FFFFFF" >
+
+<header>
+<TABLE >
+<tr>
+
+<td><img src="img/logito.png" height="180" width="270"></td><center>
+    <td width="50" height="100"></td>
+<td width="400" height="100">
+    <div class="wrap white">
+        <div class="table pink">
+        <ul>
+          
+        <li class="li">
+          <div class="top white">
+            <h1>Obtén </h1>
+            <div class="circle pink centrar"><center></center><img src="img/GREENCASH.png" "GREENCASH.png" height="30" width="30" class="imgen" align="middle"></div>
+          </div>
+          <div class="bottom pink">
+            <p> Codigos de GREENCASH para canjear productos o descuentos de las diversas empresas participantes.</p>
+            <p><strong>¡Recicla más y gana más GREENCASH!</strong></p>
+            
+          </div>
+        </li>
+      </ul>
+      </div>
+      </div></center>
+    </td></center>
+<td><font size="5" face="arial" color="2B8A3B"><i>         Haciendo un Mérida verde</i></font></td>
+</tr>
+</TABLE>
+<nav>
+
+  <ul>
+    <li><a href="INDEX.HTML"><span class="primero"><i class="icon fa fa-home fa-2x" aria-hidden="true"></i></span>Inicio</a></li>
+    <li><a href="RECOMPENSAS.HTML"><span class="segundo"><i class="icon fa fa-trash fa-2x" aria-hidden="true"></i></span>Residuos</a></li>
+    <li><a href="RESIDUOS.HTML"><span class="tercero"><i class="icon fa fa-money fa-2x" aria-hidden="true"></i></span>¿Qué hacer con los residuos?</a></li>
+    <li><a href="ACOPIO.HTML"><span class="cuarto"><i class="icon fa fa-map-marker fa-2x" aria-hidden="true"></i></span>Centros de Acopio</a></li>
+    <li><a href="noindex.php"><span class="quinto"><i class="icon fa fa-sign-in fa-2x" aria-hidden="true"></i></span>Iniciar Sesión</a></li>
+    </ul>
+   
+   </nav>
+</nav>
+</header>
+<CENTER>
+<div class="w3-content w3-section" style="max-width:900px">
+  
+  <img class="mySlides w3-animate-fading" src="MENU\IMG\Colillas-Cigarro.jpg" style="width:90%" TITLE="RESIDUOS INORGANICOS NO RECICLABLES">
+  <img class="mySlides w3-animate-fading" src="MENU\IMG\obsolete.jpg" style="width:90%" TITLE="RESIDUOS DE MANEJO ESPECIAL Y VOLUMINOSOS">
+  <img class="mySlides w3-animate-fading" src="MENU\IMG\Researchers-to-turn-food-waste-into-cash.jpg" style="width:90%" TITLE="RESIDUOS ORGANICOS">
+  <img class="mySlides w3-animate-fading" src="MENU\IMG\residuos-hospitalarios.jpg" style="width:90%" TITLE="RESIDUOS INORGANICOS NO RECICLABLES">
+  <img class="mySlides w3-animate-fading" src="MENU\IMG\INORGANICA RECICLABLE.jpg" style="width:90%" TITLE="RESIDUOS INORGANICOS RECICLABLES">
+  <img class="mySlides w3-animate-fading" src="MENU\IMG\Composting.jpg" style="width:90%" TITLE="RESIDUOS ORGANICOS">
+</div>
+</CENTER>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+
+
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<center>
+<br>
+<table class="tbl">
+<tr>
+<td width="100" height="200"></td>
+<td><CENTER>
+<div class="container1"> 
+ <div class="div-img" >  
+ <a href="RECOMPENSAS.html"  class="nounderline">  <img class="img" src="MENU\IMG\costo-province-abolite-sprechi-soldi-contribuenti.jpg" title="RESIDUOS Y RECOMPENSAS" alt="RESIDUOS Y RECOMPENSAS" ></a> <div class="text">RESIDUOS Y RECOMPENSAS</div>  
+</div></div></CENTER></TD>
+
+<td width="100" height="200"></td>
+
+<td><CENTER><div class="container2"> 
+ <div class="div-img" >  
+  <a href="ACOPIO.html" class="nounderline"> <img class="img" src="MENU\IMG\Pin-Map-e1430430077499.jpg" title="CENTROS DE ACOPIO" alt="CENTROS DE ACOPIO"></a>  <div class="text"><br>
+    CENTROS DE ACOPIO</div> 
+</div></div></CENTER></td>
+
+<td width="100" height="200"></td>
+
+<td><CENTER> <div class="container3">
+ <div class="div-img" >  
+<a href="RESIDUOS.html"  class="nounderline"> <img src="MENU\IMG\AR-301099911.jpg" title="¿QUÉ HACER CON LOS RESIDUOS?" alt="¿QUÉ HACER CON LOS RESIDUOS?" class="img"></a> <div class="text">¿QUÉ HACER CON LOS RESIDUOS?</div> 
+</div></div>
+</CENTER></td></TR></TABLE><br><center>
+<HR>
+<br><br>
+<center><img src="img/patrocinadores.jpg" heigth="600" width="700"></center><br><br>
+
+</body>
+</html>

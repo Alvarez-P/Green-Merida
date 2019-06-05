@@ -1,0 +1,40 @@
+
+		.container
+		{
+			text-align: center;
+			position: relative;
+			top: 150px;
+			right: 30px;
+
+		}
+		body
+		{
+			background-color: #33FF71;
+
+		}
+
+		.login
+		{
+		 width: 50%;
+    		height: 550px;
+    		margin: auto;
+    		margin-top: 30px;
+    		margin-bottom: 30px;
+    		background:  #33FF71;
+    		border-radius: 12px;
+    		border: 1px solid #d8dee2;
+		}
+
+		.gif{
+			 position: relative;
+			 right: 450px;
+			 top: 250px;
+		}
+		input
+		{
+			size: 40px;
+			font-size: 20px;
+		}
+		label{
+			font-size: 20px;
+		}
